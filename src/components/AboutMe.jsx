@@ -14,7 +14,7 @@ const AboutMe = () => {
                     initial="hidden"
                     whileInView={"visible"}
 
-                    className=' my-10 text-center text-2xl font-bold md:text-4xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent'>About Me
+                    className=' mt-10 text-center text-2xl font-bold md:text-4xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent'>About Me
 
                 </motion.h1>
 

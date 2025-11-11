@@ -15,7 +15,7 @@ const Technologies = () => {
                     whileInView={"visible"}
                 
                 
-                 className='my-20 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent p-2 '>Technologies</motion.h1>
+                 className='mt-10 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent p-2 '>Technologies</motion.h1>
                 <div className=' flex flex-wrap items-center justify-center gap-6 my-10 w-auto  '>
                     <motion.div
                     variants={iconVarients(1.5)}
@@ -33,7 +33,7 @@ const Technologies = () => {
                     initial= "initial"
                     animate="animate"
                     
-                     className=' rounded-2xl border-4 border-amber-400 p-4'>
+                     className=' rounded-2xl border-4 border-amber-400 p-4 mt-20'>
                         <RiCss3Fill className=' text-7xl text-white bg-blue-600' />
                         <h1 className=' text-sm text-white'>CSS</h1>
                     </motion.div>

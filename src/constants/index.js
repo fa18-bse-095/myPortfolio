@@ -1,7 +1,11 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+
+
+import project1 from "../assets/projects/pro1.png"
+import project2 from "../assets/projects/pro2.png";
+import project3 from "../assets/projects/pro4.png";
+import project4 from "../assets/projects/pro3.png";
+import { link } from "framer-motion/client";
+
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Tailwind, as well as back-end technologies like Node.js, MySQL, Express.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -9,33 +13,29 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
+    year: "2025 - Present",
+    role: "Mern Stack Stack Developer",
+    company: "Max Tech.",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript,", "React.js", "Next.js", "mongoDB"],
+    technologies: ["React.Js", "Node.js", "Express.js", "mongoDB"],
   },
   {
-    year: "2078 to 2056",
+    year: "Feburary 2024 – March 2025",
     role: "Frontend Developer",
-    company: "Adobe",
+    company: "Max Tec",
     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    technologies: ["HTML", "CSS", "TailwindCSS", "Javascript,React.JS"],
   },
   {
-    year: "2044 - 2042",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: [" Python ", " Svelte ", " Three.js ", " Postgres "],
+    year: "January 2023 – December 2023",
+    role: "Junior Web Developer",
+    company: "Max Tech",
+    description: `Built portfolio websites and small business apps using MERN stack technologies.
+    Collaborated with clients to define requirements and deliver tailored web solutions.
+    `,
+
   },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+
 ];
 
 export const PROJECTS = [
@@ -43,30 +43,33 @@ export const PROJECTS = [
     title: "FK FRUIT STORE",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React.JS"],
+      "“FK Fruit Store is an online platform that allows users to browse and purchase fresh fruits easily. It offers a user-friendly interface with smooth navigation and secure checkout. The project showcases practical e-commerce features suitable for a full-stack application.”",
+    technologies: ["HTML", "CSS", "TailwindCSS", "React.JS"],
+    link: "https://fru.vercel.app/"
+    
   },
   {
-    title: "",
+    title: " Fayaz Fast Food",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "“Fayaz Fast Food is an online platform for ordering fast food quickly and conveniently. It features a user-friendly interface, menu browsing, and easy order placement. The project highlights practical e-commerce and full-stack development skills.”",
+    technologies: ["HTML", "CSS", "TailwindCSS", "React.JS"],
+    link: "https://food-eight-ashy-57.vercel.app/"
   },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
+  // {
+  //   title: "First Project To Learn Portfolio",
+  //   image: project3,
+  //   description:
+  //     "“This is my first project created to learn and build my portfolio. It showcases my skills in web development and practical implementation of full-stack features. The project demonstrates my ability to design, develop, and deploy a functional web application.”",
+  //   technologies: ["HTML", "CSS", "React.JS", "TailwindCSS"],
+  // },
+  // {
+  //   title: "Shopsy..",
+  //   image: project4,
+  //   description:
+  //     "“Shopsy is an online e-commerce platform that allows users to browse, add, and purchase products effortlessly. It features a user-friendly interface, smooth navigation, and secure checkout. The project demonstrates practical full-stack development and modern web design skills.”",
+  //   technologies: ["HTML", "CSS", "React.JS", "TailwindCSS"],
+  // },
 ];
 
 export const CONTACT = {
