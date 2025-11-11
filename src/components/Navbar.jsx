@@ -226,7 +226,7 @@ const NavbarMenu = [
   { id: 4, title: 'Experience', link: 'experience' },
   { id: 5, title: 'Project', link: 'project' },
   { id: 6, title: 'Contact', link: 'contact' },
-  { id: 7, title: 'CV', link: 'https://fa18-bse-095.github.io/my-first-cv/', external: true }, // Added external flag
+  { id: 7, title: 'CV', link: 'https://my-first-cv-c9oy.vercel.app/', external: true }, // Added external flag
 ];
 
 const Navbar = () => {

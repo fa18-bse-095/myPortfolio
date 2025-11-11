@@ -17,12 +17,13 @@ const ResponsiveMenu = ({ open, setOpen }) => {
   }, [open, setOpen]);
 
   const menuItems = [
-   { id: 1, title: 'Home', link: 'home' },
-  { id: 2, title: 'About', link: 'about' },
-  { id: 3, title: 'Technologies', link: 'technologies' },
-  { id: 4, title: 'Experience', link: 'experience' },
-  { id: 5, title: 'Project', link: 'project' },
-  { id: 6, title: 'Contact', link: 'contact' },
+    { id: 1, title: 'Home', link: 'home' },
+    { id: 2, title: 'About', link: 'about' },
+    { id: 3, title: 'Technologies', link: 'technologies' },
+    { id: 4, title: 'Experience', link: 'experience' },
+    { id: 5, title: 'Project', link: 'project' },
+    { id: 6, title: 'Contact', link: 'contact' },
+    { id: 7, title: 'CV', link: 'https://my-first-cv-c9oy.vercel.app/', external: true },
   ];
 
   const handleLinkClick = () => {
@@ -41,19 +42,34 @@ const ResponsiveMenu = ({ open, setOpen }) => {
           className="fixed top-0 left-0 w-full h-screen z-40 md:hidden bg-black bg-opacity-80"
         >
           <div className="flex flex-col items-center justify-center h-full text-xl font-semibold uppercase text-white gap-10">
-            {menuItems.map((item, index) => (
-              <Link
-                key={index}
-                to={item.link}
-                smooth={true}
-                duration={600}
-                offset={-80} // adjust if you have a fixed navbar
-                onClick={handleLinkClick}
-                className="cursor-pointer text-white hover:text-sky-300 transition-all duration-300"
-              >
-                {item.title}
-              </Link>
-            ))}
+            {menuItems.map((item, index) =>
+              item.external ? (
+                // External link (opens in new tab)
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleLinkClick}
+                  className="cursor-pointer text-white hover:text-sky-300 transition-all duration-300"
+                >
+                  {item.title}
+                </a>
+              ) : (
+                // Internal section scroll
+                <Link
+                  key={index}
+                  to={item.link}
+                  smooth={true}
+                  duration={600}
+                  offset={-80}
+                  onClick={handleLinkClick}
+                  className="cursor-pointer text-white hover:text-sky-300 transition-all duration-300"
+                >
+                  {item.title}
+                </Link>
+              )
+            )}
           </div>
         </motion.div>
       )}
