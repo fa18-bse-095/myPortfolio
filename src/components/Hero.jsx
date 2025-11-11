@@ -18,26 +18,28 @@ const Hero = () => {
                         
                          className='  uppercase font-bold text-white  text-2xl lg:text-4xl'>Hello i'm yasin ahmad!</motion.h1>
                         <motion.span
-  variants={Fadright(0.3)}
-  initial="hidden"
-  whileInView="visible"
-  className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
->
-  <span className="inline-block min-w-[28ch]">
-    <ReactTyped
-      strings={[
-        "MERN Stack Developer",
-        "Frontend Specialist",
-        "React and Tailwind Lover",
-      ]}
-      typeSpeed={80}
-      backSpeed={10}
-      loop={true}
-      showCursor={false}
-    />
-  </span>
-</motion.span>
-
+      variants={Fadright(0.3)}
+      initial="hidden"
+      whileInView="visible"
+      className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+    >
+      <ReactTyped
+        strings={[
+          "MERN Stack Developer",
+          "Frontend Specialist",
+          "React and Tailwind Lover",
+        ]}
+        // typeSpeed={60}
+        // backSpeed={10}
+        // backDelay={1500}
+        // loop
+        // showCursor ={false}
+        typeSpeed={80}
+          backSpeed={10}
+          loop={true}
+          showCursor ={false}
+      />
+    </motion.span>
   
                         <motion.p
                         variants={Fadright(0.4)}
